@@ -1,0 +1,127 @@
+a, a:active, a:hover, a:visited {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link, .link:hover {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: underline solid;
+    cursor: pointer;
+    &.link-dark {
+        color: #fff;
+    }
+}
+
+.btn {
+    background: #000;
+    color: #fff;
+    border: 2px solid #000;
+    padding: 13px 40px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    &.transparent {
+        mix-blend-mode: color-burn;
+    }
+    &:hover {
+        background: transparent;
+        color: #000; 
+        transition: all .2s ease-in;
+    }
+    &.btn-white {
+        background: transparent;
+        border: 2px solid #000;
+        color: #000;
+        &:hover {
+            background: #000;
+            color: #fff;
+        }
+    }
+    &.btn-yellow {
+        background: $yellow;
+        color: #000;
+        &:hover {
+            background: #fff;
+            color: #000;
+        }
+    }
+}
+
+.bordered {
+    background: transparent;
+    color: #000;
+    font-size: .9rem;
+    font-weight: 600;
+    display: inline-block;
+    padding: 7px;
+    border: 2px solid #000;
+    &.bordered-dark {
+        color: #fff;
+        border: 2px solid #fff;
+    }
+}
+
+.outlined {
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 700;
+    -webkit-text-stroke: 2px #000;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading-large {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.heading-dark {
+    color: #fff;
+    &.accordion-header {
+        font-size: 1.6rem;
+        align-self: start;
+        padding-left: 24px;
+    }
+}
+
+.heading {
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+}    
+
+.accordion-button {
+    border: 1px solid #000;
+    padding: 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.description-large {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    &.description-dark {
+        color: #fff;
+    }
+}
+
+.vinyl-grey {
+    transform: rotate(3deg);
+    border: 2.5px solid black;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.cat {
+    width: 90%;
+    border: 2.5px solid #000;
+    margin: 2rem auto;
+}
+

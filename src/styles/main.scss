@@ -1,0 +1,110 @@
+$yellow: rgb(255, 251, 36);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import "./layout";
+@import "./topsection";
+@import "./components";
+@import "./footer";
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    overflow-x: hidden;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+.testimonial {
+    opacity: 1;
+    -webkit-transition: opacity .5s  ease-in;
+    -moz-transition: opacity .5s  ease-in;
+      -o-transition: opacity .5s  ease-in;
+}
+
+
+.dark {
+    background: #000;
+}
+
+.navbar {
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative; 
+    .active {
+        background: none;
+        text-decoration: underline;
+    }
+    .nav-link, .navbar-brand {
+        margin-left: 10px;
+        color: #000;
+        font-size: 1.1rem;    
+        &:active, &:focus, &:visited {
+        color: #000;
+        }
+        &:hover {
+            color: $yellow;
+        }
+    }
+    .navbar-brand {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    .navbar-toggler {
+        z-index: 100;
+        border: none;
+        &:active, &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    .dropdown-menu {
+        background: #000;
+    }
+    .dropdown-item {
+        color: #fff;
+        font-size: 1.3em;
+        font-weight: 500;
+        &:hover, &:focus{
+            color: $yellow;
+            background: none;
+        }  
+        &:active {
+            color: #fff;
+            background: none;
+        }
+    }
+    .bi {
+        font-size: 1.5rem;
+        margin-left: 15px;
+        margin-right: 15px;
+        transition: color .2s ease-in-out;
+        &:hover {
+            color: $yellow;
+        }
+    }
+}
+.log-in{
+    border: 2px solid transparent;
+    transition: border-color .3s ease-in;
+    &:hover {
+        border-bottom: 2px solid #000;
+    }
+}
+
+.header_right-bar {
+    position: absolute;
+    font-weight: 600;
+    font-size: 1.1rem;
+    top: 20px;
+    right: 30px;
+    height: 68px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    .log-in {
+        margin-right: 20px;
+    }
+}

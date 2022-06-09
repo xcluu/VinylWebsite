@@ -1,0 +1,116 @@
+.top {
+
+    position: relative;
+    height: 150vh;
+    .top-left-img-container {
+        max-width: 40%;
+        z-index: 10;
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        transform: rotate(-15deg);
+    }
+    .top-right-img-container {
+        max-width: 40%;
+        z-index: 10;
+        position: absolute;
+        top: 5%;
+        right: 20%;
+        transform: rotate(10deg);
+    }
+    img {
+        border: 2.5px solid #000;
+        max-height: 95vh;
+    }
+    .sticker {
+        border: none;
+        z-index: 15;
+        width: 20%;
+        position: absolute;
+        bottom: 10%;
+        right: 20%;
+        transform: rotate(10deg);
+    }
+    .top-left-first {
+        width: 40%;
+        z-index: 100;
+    }
+}
+.headline {
+    z-index: 100;
+}
+
+@media (max-width: 1400px) {
+    .top {
+        height: 100vh;
+        .top-left-img-container {
+            left: 45%;
+        }
+        .top-right-img-container {
+            right: 5%;
+        }
+        .sticker {
+            right: 10%;
+        }
+        img {
+            max-height: 60vh;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .top {
+        height: 80vh;
+        .top-left-img-container {
+        left: 45%;
+
+        }
+        .top-right-img-container {
+            right: 5%;
+        }
+        .top-left-first {
+            width: 35%;
+        }
+        img {
+            max-height: 50vh;
+        }
+        .sticker {
+            width: auto;
+            max-height: 20vh;
+        }
+    }
+
+}
+@media (max-width: 1050px) {
+    .top {
+        height: auto;
+        .sticker {
+            bottom: 20%;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .top {
+        padding-bottom: 2rem;
+        .top-left-first {
+            width: 100%;
+        }
+        .top-right-first {
+            height: 0;
+        }
+        .top-left-img-container {
+            position: relative;
+            left: 50%;
+        }
+        .top-right-img-container {
+            position: relative;
+            right: -10%;
+        }
+        .sticker {
+            position: relative;
+            max-width: 20%;
+            right: -20%;
+            height: auto;
+        }
+    }
+
+}

@@ -1,0 +1,86 @@
+.col-12, .col-6 {
+    padding: 3rem 2rem;
+}
+
+.w-80 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bordered {
+    margin: 1.8rem 0;
+}
+
+.heading {
+    margin-bottom: 1.2rem;
+}
+
+.description {
+    width: 75%;
+    margin: 2rem auto;
+}
+
+.main .btn {
+    margin-bottom: 1.8rem;
+}
+
+.top {
+    padding-left: 3rem;
+}
+
+.testimonial-btn-container {
+    .btn:first-of-type {
+        margin-right: .3rem;
+    }
+}
+
+.full-screen {
+    width: 100%;
+}
+
+section {
+    border-bottom: 2.5px solid #000;
+}
+
+.accordion-container {
+    width: 80%;
+}
+
+.vinyl-examples-container {
+    height: 65vh;
+    display: inline-block;
+    width: auto;
+    margin-bottom: 3rem;
+    position: relative;
+    .vinyl-design {
+        height: 100%;
+        width: auto;
+        mix-blend-mode: hard-light;
+    }
+    .sprinkle-1 {
+        position: absolute;
+        top: 10%;
+        right: 15%;
+        width: 20%;
+        height: auto;
+        transform: rotate(10deg);
+    }
+    .sprinkle-2 {
+        position: absolute;
+        bottom: 5%;
+        left: 7%;
+        height: 35%;
+        width: auto;
+        transform: rotate(-10deg);
+    }
+}
+
+
+@media(min-width: 992px) {
+    .trenn-l {
+        border-left: 1.125px solid #000;
+    }
+    .trenn-r {
+        border-right: 1.125px solid #000;
+    }
+}
